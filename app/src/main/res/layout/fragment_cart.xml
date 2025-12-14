@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textCartTitle"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:textSize="20sp"
+        android:textColor="@color/textDark"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/textCartSubtitle"
+        style="@style/TextRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review your items before checkout."
+        android:textSize="14sp"
+        android:textColor="@color/textMedium"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/textTotal"
+            style="@style/TextBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total: $0.00"
+            android:textSize="16sp"
+            android:textColor="@color/textDark" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Checkout"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/background"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            style="@style/TextMedium" />
+
+    </LinearLayout>
+
+</LinearLayout>
