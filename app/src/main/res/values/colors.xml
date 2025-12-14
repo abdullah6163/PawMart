@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Colors -->
+    <color name="primary">#FF7E47</color>
+    <color name="primaryVariant">#FF945F</color>
+
+    <color name="secondary">#4ECDC4</color>
+    <color name="secondaryVariant">#A3E6E1</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F8F8F8</color>
+
+    <!-- Text Colors -->
+    <color name="textDark">#1E1E1E</color>
+    <color name="textMedium">#4A4A4A</color>
+    <color name="textLight">#9E9E9E</color>
+
+    <!-- State Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#E53935</color>
+
 </resources>
