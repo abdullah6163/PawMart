@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Illustration -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@drawable/ic_pet_welcome"
+        android:contentDescription="Welcome Illustration"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PawMart"
+        android:textColor="@color/textDark"
+        android:textSize="34sp"
+        android:layout_marginTop="30dp" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/welcomeSubtitle"
+        style="@style/TextRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Everything your pet needs in one place."
+        android:textColor="@color/textMedium"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:text="Get Started"
+        android:textSize="18sp"
+        android:textColor="@color/background"
+        android:backgroundTint="@color/primary" />
+</LinearLayout>
