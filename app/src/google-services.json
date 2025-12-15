@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "284037863868",
+    "project_id": "pawmart-e0b6a",
+    "storage_bucket": "pawmart-e0b6a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284037863868:android:59e5fdd513c94cba16f3b9",
+        "android_client_info": {
+          "package_name": "com.example.pawmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284037863868-ebgt8r5gc4jngtlg42htop1khb7qn411.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pawmart",
+            "certificate_hash": "0b278e3eae67ef14f62d8cb6b5693a72a217ea9b"
+          }
+        },
+        {
+          "client_id": "284037863868-f4e8t6utkp4904iva98papq2025i0ht4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5EdDLAegY0hDVyrSiils9Cmcg5khh6a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284037863868-f4e8t6utkp4904iva98papq2025i0ht4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
