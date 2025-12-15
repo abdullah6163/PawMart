@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pet_welcome" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCart"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="ADD TO CART"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            app:cornerRadius="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="ADD TO WISHLIST"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:cornerRadius="16dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#BDBDBD"
+            android:backgroundTint="@android:color/white"
+            android:textColor="#111111" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
