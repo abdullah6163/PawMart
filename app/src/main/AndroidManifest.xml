@@ -18,14 +18,13 @@
         <activity
             android:name=".ProductDetailActivity"
             android:exported="false" />
-        <activity
-            android:name=".PaymentActivity"
-            android:exported="false" />
+        <!-- AuthActivity does not have intent-filter, so it should NOT be exported -->
         <activity
             android:name=".AuthActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" /> <!-- Welcome screen → MUST BE EXPORTED (it has MAIN + LAUNCHER filter) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +32,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+ MainActivity also has a launcher intent-filter → MUST be exported
+             But since WelcomeActivity is the launcher, MainActivity should NOT have that intent-filter now.
+             REMOVE the intent-filter from MainActivity!!
+        -->
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".CheckoutActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC-8Fh_r600Wmmy34GZxd7G1GbLlcu43Xw" />
     </application>
 
 </manifest>
